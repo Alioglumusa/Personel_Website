@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormPractise</title>
+</head>
+<body>
+
+    <form action="/bilgiler">
+        <p>
+            <label for="kullanıcıadı">Kullanıcı Adı Giriniz:</label>
+            <input id="kullanıcıadı" type="text" placeholder="Kullanıcı Adı" name="kullanıcıadı">
+        </p>
+    
+
+    
+        <p>
+            <label for="password">Şifrenizi Giriniz:</label>
+            <input id="password" type="password" placeholder="Şifre Giriniz" name="password">
+        </p>
+
+        <button>Register</button>   
+    </form>
+
+    <h2>Doğrulamalar</h2>
+    <form action="/yedek">
+        <label for="ilk">İsim Giriniz</label>
+        <input type="text" name="ilk" id="ilk" required> <!--required alanı boş bırkaınca uyarı verdirdi-->
+        <button>Submit</button>
+        <p>
+        <label for="kullanıcıadı">Kullanıcı Adı:</label>
+        <input type="text" id="kullanıcıadı" name="kullanıcıadı" minlength="5" maxlength="25">
+        </p>
+    </form>
+
+    <!-- file:///C:/bilgiler?kullan%C4%B1c%C4%B1ad%C4%B1=Musa&password=123 -->
+    
+</body>
+</html>
+
